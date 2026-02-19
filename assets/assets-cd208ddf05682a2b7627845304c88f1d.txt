@@ -1,0 +1,83 @@
+fonts/Exo2_GradientShadow_36/Exo2_GradientShadow_36.fnt
+fonts/Exo2_GradientShadow_36/Exo2_GradientShadow_36.png
+fonts/Exo2_GradientShadow_36/Exo2_GradientShadow_36_backup.png
+fonts/Orbitron-Bold-36/Orbitron-Bold-36.fnt
+fonts/Orbitron-Bold-36/Orbitron-Bold-36.png
+fonts/Orbitron-Bold-36/Orbitron-Bold-36_backup.png
+fonts/OrbitronReg36/OrbitronReg36.fnt
+fonts/OrbitronReg36/OrbitronReg36.png
+fonts/OrbitronReg36/OrbitronReg36_backup.png
+gameboard_bg.png
+gameboard_bg_orig.png
+libgdx.png
+menuscreen_bg.png
+menuscreen_bg_desat.png
+music/game_music.mp3
+music/menu_music.mp3
+screenshots/appstore_6_5/1.png
+screenshots/appstore_6_5/2.png
+screenshots/appstore_6_5/3.png
+screenshots/appstore_6_5/4.png
+screenshots/appstore_6_5/5.png
+screenshots/appstore_6_5/6.png
+screenshots/appstore_6_7/1.png
+screenshots/appstore_6_7/2.png
+screenshots/appstore_6_7/3.png
+screenshots/appstore_6_7/4.png
+screenshots/appstore_6_7/5.png
+screenshots/appstore_6_7/6.png
+screenshots/appstore_ipad/1.png
+screenshots/appstore_ipad/2.png
+screenshots/appstore_ipad/3.png
+screenshots/appstore_ipad/4.png
+screenshots/appstore_ipad/5.png
+screenshots/appstore_ipad/6.png
+screenshots/appstore_ipad/ipad_2026-02-17 at 16.15.00.png
+screenshots/appstore_ipad/ipad_2026-02-17 at 16.15.27.png
+screenshots/appstore_ipad/ipad_2026-02-17 at 16.15.43.png
+screenshots/appstore_ipad/ipad_2026-02-17 at 16.16.16.png
+screenshots/appstore_ipad/ipad_2026-02-17 at 16.16.22.png
+screenshots/appstore_ipad/ipad_2026-02-17 at 16.16.37.png
+screenshots/cropped/screenshot_1.png
+screenshots/cropped/screenshot_2.png
+screenshots/cropped/screenshot_3.png
+screenshots/cropped/screenshot_4.png
+screenshots/cropped/screenshot_5.png
+screenshots/iosphone/1.png
+screenshots/iosphone/2.png
+screenshots/iosphone/3.png
+screenshots/iosphone/4.png
+screenshots/iosphone/5.png
+screenshots/iosphone/6.png
+screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.15.00.png
+screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.15.27.png
+screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.15.43.png
+screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.16.16.png
+screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.16.22.png
+screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.16.37.png
+secrets.properties
+secrets.properties.example
+sfx/gameover_lose.mp3
+sfx/gameover_win.mp3
+sfx/menuchange_or_gamestart.mp3
+store/app_icon_512.png
+store/feature_graphic.png
+suchsoftware/clean_dark.png
+suchsoftware/clean_dark.svg
+suchsoftware/clean_dark_w_text.png
+suchsoftware/clean_dark_w_text.svg
+suchsoftware/clean_light.png
+suchsoftware/clean_light.svg
+suchsoftware/clean_light_w_text.png
+suchsoftware/clean_light_w_text.svg
+suchsoftware/clean_light_w_text_transparentbg.png
+suchsoftware/favicon_dark.png
+suchsoftware/favicon_dark.svg
+suchsoftware/favicon_light.png
+suchsoftware/favicon_light.svg
+tiles.atlas
+tiles1.png
+tiles2.png
+tiles3.png
+ui.atlas
+ui.png

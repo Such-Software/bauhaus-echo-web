@@ -1,0 +1,167 @@
+
+ui.png
+size: 512, 128
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+btn-back-down
+  rotate: false
+  xy: 1, 83
+  size: 67, 39
+  orig: 67, 39
+  offset: 0, 0
+  index: -1
+btn-back-up
+  rotate: false
+  xy: 1, 42
+  size: 67, 39
+  orig: 67, 39
+  offset: 0, 0
+  index: -1
+btn-close-up
+  rotate: false
+  xy: 70, 33
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+btn-default-down
+  rotate: false
+  xy: 70, 83
+  size: 67, 39
+  orig: 67, 39
+  offset: 0, 0
+  index: -1
+btn-default-up
+  rotate: false
+  xy: 1, 1
+  size: 67, 39
+  orig: 67, 39
+  offset: 0, 0
+  index: -1
+check-off
+  rotate: false
+  xy: 469, 90
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+check-on
+  rotate: false
+  xy: 469, 56
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+config-down
+  rotate: false
+  xy: 139, 90
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+config-up
+  rotate: false
+  xy: 205, 90
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+help-down
+  rotate: false
+  xy: 271, 90
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+help-up
+  rotate: false
+  xy: 337, 90
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+icon-android
+  rotate: false
+  xy: 186, 12
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+icon-apple
+  rotate: false
+  xy: 212, 12
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+icon-web
+  rotate: false
+  xy: 238, 12
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+pill-light
+  rotate: false
+  xy: 139, 64
+  size: 64, 24
+  orig: 64, 24
+  offset: 0, 0
+  index: -1
+pill-section
+  rotate: false
+  xy: 205, 64
+  size: 64, 24
+  orig: 64, 24
+  offset: 0, 0
+  index: -1
+play-down
+  rotate: false
+  xy: 403, 90
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+play-up
+  rotate: false
+  xy: 271, 56
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+score-row
+  rotate: false
+  xy: 120, 38
+  size: 64, 24
+  orig: 64, 24
+  offset: 0, 0
+  index: -1
+score-row-highlight
+  rotate: false
+  xy: 186, 38
+  size: 64, 24
+  orig: 64, 24
+  offset: 0, 0
+  index: -1
+secondary-down
+  rotate: false
+  xy: 337, 56
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+secondary-up
+  rotate: false
+  xy: 403, 56
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+stats-panel
+  rotate: false
+  xy: 120, 12
+  size: 64, 24
+  orig: 64, 24
+  offset: 0, 0
+  index: -1
