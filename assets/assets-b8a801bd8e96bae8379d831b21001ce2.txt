@@ -71,10 +71,12 @@ suchsoftware/clean_light.svg
 suchsoftware/clean_light_w_text.png
 suchsoftware/clean_light_w_text.svg
 suchsoftware/clean_light_w_text_transparentbg.png
+suchsoftware/favicon_32.png
 suchsoftware/favicon_dark.png
 suchsoftware/favicon_dark.svg
 suchsoftware/favicon_light.png
 suchsoftware/favicon_light.svg
+suchsoftware/ss_preloader_logo.png
 tiles.atlas
 tiles1.png
 tiles2.png
