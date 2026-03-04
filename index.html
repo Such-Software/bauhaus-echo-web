@@ -1,32 +1,135 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <title>Bauhaus Echo</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta id="gameViewport" name="viewport" content="width=device-width initial-scale=1">
+  <meta id="gameViewport" name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="styles.css" rel="stylesheet" type="text/css">
+
+  <!-- Google AdSense — auto ads enabled at account level -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2501747033825166"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+<!-- ================================================================= -->
+<!--  NAG OVERLAY — shown before first game and between every game     -->
+<!-- ================================================================= -->
+<div id="nag-overlay">
+  <div id="nag-box">
+    <div id="nag-header">
+      <h1 id="nag-title">BAUHAUS ECHO</h1>
+      <p id="nag-tagline">A visual memory puzzle</p>
+    </div>
+
+    <div id="nag-pitch">
+      <p><strong>Want the full experience without ads?</strong></p>
+      <p>Support us on itch.io for just $2 — desktop, no ads, ever.</p>
+    </div>
+
+    <div id="nag-store-links">
+      <a href="https://suchsoftware.itch.io/bauhaus-echo"
+         target="_blank" rel="noopener noreferrer"
+         class="nag-btn nag-btn-primary">
+        Buy on itch.io — $2
+      </a>
+
+      <div id="nag-mobile-row">
+        <a href="https://apps.apple.com/us/app/bauhaus-echo/id6759010657"
+           target="_blank" rel="noopener noreferrer"
+           class="nag-btn nag-btn-store">
+          App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.suchsoftware.bauhausecho"
+           target="_blank" rel="noopener noreferrer"
+           class="nag-btn nag-btn-store">
+          Google Play
+        </a>
+      </div>
+    </div>
+
+    <div id="nag-divider"></div>
+
+    <!-- AdSense display ad — replace data-ad-slot with your unit ID -->
+    <div id="nag-ad-container">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2501747033825166"
+        data-ad-slot="3097663248"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    </div>
+
+    <button id="nag-continue" onclick="dismissNagOverlay()">
+      Continue to Web Version ▸
+    </button>
+
+    <p id="nag-fine-print">Free with ads between games</p>
+  </div>
+</div>
+
+<!-- Game canvas container -->
 <div align="center" id="embed-html"></div>
-<script type="text/javascript" src="html/html.nocache.js"></script>
-</body>
 
 <script>
-function handleMouseDown(evt) {
-  evt.preventDefault();
-  evt.stopPropagation();
-  window.focus();
-}
+// ================================================================
+//  Nag overlay state machine
+// ================================================================
+(function() {
+  var overlay  = document.getElementById('nag-overlay');
+  var embed    = document.getElementById('embed-html');
+  var gwtLoaded = false;
 
-function handleMouseUp(evt) {
-  evt.preventDefault();
-  evt.stopPropagation();
-}
-document.addEventListener('contextmenu', event => event.preventDefault());
-document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
-document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+  // Request the first ad for the initial overlay
+  try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+
+  // Called when user clicks "Continue to Web Version"
+  // Also called from GwtAdManager via JSNI after between-game nag
+  window.dismissNagOverlay = function() {
+    overlay.style.display = 'none';
+
+    // If a rewarded-ad session was pending, notify GWT
+    if (window.__gwtRewardCallback) {
+      try { window.__gwtRewardCallback(); } catch(e) {}
+    }
+
+    if (!gwtLoaded) {
+      // First dismiss: inject GWT script to start the game
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src  = 'html/html.nocache.js';
+      document.body.appendChild(s);
+      gwtLoaded = true;
+
+      // Attach input handlers once GWT creates the canvas
+      s.onload = function() {
+        setTimeout(function() {
+          embed.addEventListener('mousedown', blockDefault, false);
+          embed.addEventListener('mouseup',   blockDefault, false);
+        }, 500);
+      };
+    }
+  };
+
+  // Called from GwtAdManager.showInterstitialAd() via JSNI
+  // Shows the nag overlay on top of the running game
+  window.showNagOverlay = function() {
+    overlay.style.display = 'flex';
+    // Request a fresh ad each time the overlay appears
+    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+  };
+
+  // Block right-click and default mouse behaviour on the canvas
+  function blockDefault(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    window.focus();
+  }
+  document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+})();
 </script>
+
+</body>
 </html>
