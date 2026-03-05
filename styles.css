@@ -138,30 +138,29 @@ body {
 #nag-ad-container {
   margin: 0 0 1.2rem;
   min-height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
-/* Continue button */
+/* Continue button — prominent, this IS the main action for most visitors */
 #nag-continue {
   display: block;
   width: 100%;
-  padding: 0.75rem;
-  background: transparent;
-  color: #777;
-  border: 1px solid #333;
+  padding: 0.85rem;
+  background: #2a2a2a;
+  color: #eee;
+  border: 1px solid #555;
   border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: background 0.15s ease, border-color 0.15s ease;
   font-family: inherit;
+  letter-spacing: 0.02em;
 }
 
 #nag-continue:hover {
-  color: #bbb;
-  border-color: #555;
+  background: #383838;
+  border-color: #777;
 }
 
 /* Fine print */

@@ -82,8 +82,10 @@
   var embed    = document.getElementById('embed-html');
   var gwtLoaded = false;
 
-  // Request the first ad for the initial overlay
-  try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+  // Request the first ad for the initial overlay (defer until layout is done)
+  setTimeout(function() {
+    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) { console.warn('AdSense init error:', e); }
+  }, 500);
 
   // Called when user clicks "Continue to Web Version"
   // Also called from GwtAdManager via JSNI after between-game nag
