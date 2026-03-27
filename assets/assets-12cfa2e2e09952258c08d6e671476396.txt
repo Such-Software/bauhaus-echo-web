@@ -28,55 +28,49 @@ libgdx.png
 menuscreen_bg.png
 menuscreen_bg_desat.png
 music/game_music.mp3
+music/game_music2.mp3
+music/game_music3.mp3
+music/game_music4.mp3
+music/game_music5.mp3
 music/menu_music.mp3
-screenshots/android/screenshot_1.png
-screenshots/android/screenshot_2.png
-screenshots/android/screenshot_3.png
-screenshots/android/screenshot_4.png
-screenshots/android/screenshot_5.png
-screenshots/appstore_6_5/1.png
-screenshots/appstore_6_5/2.png
-screenshots/appstore_6_5/3.png
-screenshots/appstore_6_5/4.png
-screenshots/appstore_6_5/5.png
-screenshots/appstore_6_5/6.png
-screenshots/appstore_6_7/1.png
-screenshots/appstore_6_7/2.png
-screenshots/appstore_6_7/3.png
-screenshots/appstore_6_7/4.png
-screenshots/appstore_6_7/5.png
-screenshots/appstore_6_7/6.png
-screenshots/appstore_ipad/1.png
-screenshots/appstore_ipad/2.png
-screenshots/appstore_ipad/3.png
-screenshots/appstore_ipad/4.png
-screenshots/appstore_ipad/5.png
-screenshots/appstore_ipad/6.png
-screenshots/appstore_ipad/ipad_2026-02-17 at 16.15.00.png
-screenshots/appstore_ipad/ipad_2026-02-17 at 16.15.27.png
-screenshots/appstore_ipad/ipad_2026-02-17 at 16.15.43.png
-screenshots/appstore_ipad/ipad_2026-02-17 at 16.16.16.png
-screenshots/appstore_ipad/ipad_2026-02-17 at 16.16.22.png
-screenshots/appstore_ipad/ipad_2026-02-17 at 16.16.37.png
-screenshots/iosphone/1.png
-screenshots/iosphone/2.png
-screenshots/iosphone/3.png
-screenshots/iosphone/4.png
-screenshots/iosphone/5.png
-screenshots/iosphone/6.png
-screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.15.00.png
-screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.15.27.png
-screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.15.43.png
-screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.16.16.png
-screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.16.22.png
-screenshots/ipad/Simulator Screenshot - iPad Pro 13-inch (M4) - 2026-02-17 at 16.16.37.png
+screenshots/output/gradient-mine/phone/1.png
+screenshots/output/gradient-mine/phone/2.png
+screenshots/output/gradient-mine/phone/3.png
+screenshots/output/gradient-mine/phone/4.png
+screenshots/output/gradient-mine/phone/5.png
+screenshots/output/gradient-mine/phone/6.png
+screenshots/output/gradient-mine/tablet/1.png
+screenshots/output/gradient-mine/tablet/2.png
+screenshots/output/gradient-mine/tablet/3.png
+screenshots/output/gradient-mine/tablet/4.png
+screenshots/output/gradient-mine/tablet/5.png
+screenshots/output/gradient-mine/tablet/6.png
+screenshots/phone/1.png
+screenshots/phone/2.png
+screenshots/phone/3.png
+screenshots/phone/4.png
+screenshots/phone/5.png
+screenshots/phone/6.png
+screenshots/tablet/1.png
+screenshots/tablet/2.png
+screenshots/tablet/3.png
+screenshots/tablet/4.png
+screenshots/tablet/5.png
+screenshots/tablet/6.png
 secrets.properties
 secrets.properties.example
+sfx/click.ogg
+sfx/confirm.ogg
+sfx/drop.ogg
 sfx/gameover_lose.mp3
 sfx/gameover_win.mp3
 sfx/menuchange_or_gamestart.mp3
+sfx/pickup.ogg
+sfx/reject.ogg
+sfx/toggle.ogg
 store/app_icon_512.png
 store/feature_graphic.png
+store/feature_graphic_old.png
 suchsoftware/clean_dark.png
 suchsoftware/clean_dark.svg
 suchsoftware/clean_dark_w_text.png
