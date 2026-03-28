@@ -51,6 +51,8 @@ screenshots/phone/3.png
 screenshots/phone/4.png
 screenshots/phone/5.png
 screenshots/phone/6.png
+screenshots/preview.mp4
+screenshots/preview_30s_appstore.mp4
 screenshots/tablet/1.png
 screenshots/tablet/2.png
 screenshots/tablet/3.png
