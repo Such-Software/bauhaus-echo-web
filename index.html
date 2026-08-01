@@ -10,6 +10,11 @@
   <!-- Google AdSense — auto ads enabled at account level -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2501747033825166"
     crossorigin="anonymous"></script>
+
+  <!-- Fail-closed web-app → checkout wiring. Inert until Operations populates
+       app-config.js (OIDC client + shop tenant); no secrets. -->
+  <script src="app-config.js"></script>
+  <script src="checkout.js"></script>
 </head>
 
 <body>
@@ -30,10 +35,13 @@
     </div>
 
     <div id="nag-store-links">
-      <!-- PRIMARY: our own website sales funnel -->
+      <!-- PRIMARY: real checkout when configured; else falls through to the apex
+           marketing site. checkout.js returns true when it starts OIDC login (we
+           then preventDefault); false → the href proceeds (fail-closed). -->
       <a href="https://bauhausecho.com"
          target="_blank" rel="noopener noreferrer"
-         class="nag-btn nag-btn-primary">
+         class="nag-btn nag-btn-primary"
+         onclick="return !(window.SUCH_APP_startCheckout &amp;&amp; window.SUCH_APP_startCheckout())">
         Get the Full Game ▸
       </a>
 
